@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+@media screen and (max-width: 2590px) {
+    .burger{
+        display: none;
+    }
+}
+@media screen and (max-width: 1041px) {
+    header nav a{
+        display: none;
+    }
+    .burger{
+        display:block;
+    }
+}
+ 
+@media screen and (max-width:875px){
+        .container{
+            width: calc(100% - 50px);
+        }
+        header nav a{
+            display: none;
+        }
+        .burger{
+            display:block;
+        }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family:Be Vietnam Pro;
+    background-color:rgb(247, 247, 248);
+}
+
+.container{
+    width: calc(100% - 324px);
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+        
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+header{
+    padding: 2%;
+    border-bottom: 1px solid  #F1F1F3;
+    position: sticky;
+    top: 0;   
+    z-index: 9;
+    background-color: white; 
+}
+ header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+   
+}
+ header nav img{
+    gap: 8px;
+    background-color: #F1F1F3;
+    
+ }
+ header nav .active{
+    background-color: #F1F1F3;
+    border-radius: 8px;
+    padding: 14px 24px;
+ }
+header .Register{
+
+   display: flex;
+   gap: 30px;
+    align-items: center;  
+}
+header .Register  a{
+     color:beige;
+    background-color: #FF9500;
+    border-radius: 8px;
+    padding: 14px 34px;  
+}
+.Hero{
+    padding: 4% 0;
+}
+.Hero .Heros{
+   margin: auto;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Hero .HeroSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.Hero .HeroSections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 11px;
+    border: 1px solid  #F1F1F3;
+    background:  #FCFCFD;
+    padding: 14px 30px 14px 20px;
+}
+.Abstract{
+    display: flex;
+    position: absolute;
+    left: -24px;
+    top: -30px;
+    right: 0;
+}
+.HeroSections img{
+    border-radius: 6px;
+background: var(--Orange-95, #FFF4E5);
+}
+.HeroSections span{
+    color:#FF9500;
+}
+.HeroSection .Text-Container1{
+    font-size: 20px;
+    font-weight: 550;
+}
+.HeroSection .Text-Container1{
+    font-size: 10px;
+    font-weight: 400;
+}
+.Icon-Container{
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+font-size: 10px;
+
+}
+
+.Icon-Container .Icon-Container1{
+    background-color: #FF9500;
+    color: #F1F1F3;
+    padding: 18px 24px;
+    border-radius: 8px;
+}
+.Icon-Container .Icon-Container2{
+    background-color: #F1F1F3;
+    color: black;
+    padding: 18px 24px;
+    border-radius: 8px;
+}
+.GIVE{
+    padding: 4% 0;
+   
+}
+.Cards-Container{
+    width: 70%;
+    border-radius: 12px;
+    border: 1px solid   #F1F1F3;
+    background:   #FCFCFD;
+    padding: 20px;
+    margin: auto;
+  
+}
+
+ .card-Container{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-Container svg{
+    border-left: 1px solid  #F1F1F3;
+    padding: 3%;
+}
+
+.card-Container .svg1{
+    border-left: 1px solid    *#FCFCFD; 
+} 
+.SELECTED{
+    padding: 4% 0;
+   
+   
+}
+.Hero-Container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     
+}
+.Hero-Container img{
+    
+    width: 77%;
+   
+}
+     
+ 
+.Hero-Container svg{
+    border-radius: 68px;
+    border: 6px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.20);;
+    position: absolute;
+    padding: 10px;
+
+}
+.Courses{
+    padding: 4% 0;
+}
+.Courses .container{
+    width: calc(100% - 324px);
+}
+
+.Benefits-Section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+   
+}
+
+
+.Benefits-Section .row{
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+   
+ 
+} 
+.Benefits-Section .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background:  #FFF;
+    gap: 40px;
+    padding: 10px;
+    align-items: flex-end;
+    flex :1 1 250px;
+   
+    
+}
+.Benefits-Section .card .Number{
+   text-align: right;
+   color:  #262626;
+   font-size: 40px;
+   font-weight: 700;
+}
+.Benefits-Section .card .text{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  
+}
+.Benefits-Section .card .icon{
+   padding: 5px;
+    text-align: right;
+    border-radius: 8px;
+   border: 1px solid  #F1F1F3;
+   background:  #FCFCFD;
+   
+    
+}.HeroSections{
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+}
+.HeroSections h3{
+    font-weight:800;
+    font-size: 30px;
+}
+.HeroSections-child{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+.HeroSections-child p{
+    font-size:10px ;
+}
+.HeroSections-child a{
+    border-radius: 7px;
+    border: 1px solid  #F1F1F3;
+    background:  #FCFCFD;
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+
+}
+.OurCourses-Section {
+    padding: 4% 0;
+}
+.Our-Courses{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Our-Courses .row{
+    gap: 30px;
+    flex-wrap: wrap;
+}
+ .Our-Courses .card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+   border: 1px solid  #F1F1F3;
+   background:  #FFF;
+   padding: 50px;
+   flex: 1 1 300px;
+   align-self: stretch;
+  
+  
+  
+}
+.Our-Courses .card .card-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.Our-Courses .card .card-item {
+    display: flex;
+    gap: 10px;
+   
+    
+}
+.Our-Courses .card img{
+   width: 100%;
+}
+.card-items p{
+    font-weight: 600;
+    font-size: 15px;
+
+}
+ .card-item p{
+    border: 1px solid  #F1F1F3;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+ .card .card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+ }
+ .card .card-text .text1{
+    font-weight: 600;
+    font-size: 24px;
+ }
+ .card .card-text .text2{
+    font-size: 10px;
+    font-weight: 400;
+    
+ }
+ .Our-Courses .card a{
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background:  #F7F7F8;
+    text-align: center;
+    padding: 10px;
+ }
+.Testimonials-Section{
+    padding: 40px 0;
+}
+.Testimonial{
+    border-radius: 12px;
+   border: 1px solid var(--White-95, #F1F1F3);
+   background-color: var(--Absolute-White, #FFF);
+   display: flex;
+  flex-direction: column; 
+  flex: 1 1 400px;  
+ 
+    
+}
+.Our-Testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Our-Testimonials .row {
+  gap: 20px; 
+  flex-wrap: wrap; 
+
+ }
+
+
+.Testimonial-info img{
+ width: 60px;
+  height: 60px;
+   border-radius: 8px
+}
+.Testimonial .p1{
+    border-bottom: 1px solid  #F1F1F3;
+    padding: 30px;
+
+}
+.Testimonial-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:  #FCFCFD;
+    border-bottom: 1px solid #FCFCFD;
+    border-radius: 12px;
+}
+.Testimonial-item a{
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background: #F7F7F8;
+    padding: 10px;
+}
+.Testimonial-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Pricing-Section {
+    padding: 40px 0;
+}
+
+.Our-Pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.Hero-Sections h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.Hero-Sections-child {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.Hero-Sections-child p {
+    font-size: 10px;
+}
+
+.Hero-Sections-child .button {
+    display: flex;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #FFF;
+}
+
+.button .button-1 {
+    background-color: #FF9500;
+    color: #F1F1F3;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+}
+
+.button .button-2 {
+    background-color: #FFF;
+    padding: 14px 30px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+}
+
+.Hero-Sections-child .button {
+    display: flex;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #FFF;
+}
+
+.Hero-Sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Our-Pricing .row {
+    gap: 20px;
+    background-color: #FFF;
+    padding: 40px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+    background: #FCFCFD;
+    padding: 50px 30px 30px 30px;
+    flex: 1 1 200px;
+    align-items: stretch;
+}
+
+.class .p1 {
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background: #FFF9F0;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px 22px;
+    text-align: center;
+}
+
+.class-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.class-text .class-text2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.class-text .class-text1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.class .sub-Class {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFF;
+    padding: 40px;
+    align-items: stretch;
+}
+
+.class-list .p2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #262626;
+    text-align: center;
+}
+
+.class-list .class-item {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.class a {
+    border-radius: 0px 0px 8px 8px;
+    background: #FF9500;
+    padding: 20px 24px;
+    color: #F7F7F8;
+    text-align: center;
+}
+
+.class .p1 {
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background: #FFF9F0;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px 22px;
+    text-align: center;
+}
+
+.class-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+}
+    
+
+.button .button-a1{
+    background-color: #FF9500;
+    color: #F1F1F3;
+    padding: 14px 30px;
+    border-radius: 8px;
+   border: 1px solid #FFF; 
+    
+
+}
+.button .button-a2{
+    background-color: #FFF;
+    padding: 14px 30px;
+    border-radius: 100px;
+    border: 1px solid #FFF;   
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+   border: 1px solid  #F1F1F3;
+    background:  #FCFCFD;
+   padding: 50px 30px 30px 30px;
+   flex: 1  1 200px;
+   align-items: stretch;
+    
+}
+.listContainer .p1{
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background: #FFF9F0;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px 22px;
+    text-align: center;
+}
+ .list-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;;
+    align-self: stretch;
+}
+.list-text .listContainer-1{
+    font-size: 80px;
+    font-weight: 600;
+}
+.list-text .listContainer-2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.listContainer .sub-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:  #FFF;
+   padding: 40px;
+   align-items: stretch;
+  
+}
+.sub-list .p2{
+    font-size: 20px;
+    font-weight: 600;
+    color:  #262626;
+    text-align: center;
+}
+.sub-list .list-item{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    
+    
+}
+.sub-list .features-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+   border: 1px solid   #F1F1F3;
+   padding: 5px;
+   background-color: #FFF;
+   font-size: 15px;
+   font-weight: 400;
+   color: #4C4C4D;
+   
+   align-self: stretch;
+   
+}
+.features-item .svg{
+    border-radius: 6px;
+   background:  #FFF4E5;
+   padding: 3px;
+   align-self: stretch;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   align-items: flex-start;
+    gap: 10px;
+}
+.features-item .svg1{
+    display: flex;
+    padding: 6px;
+   align-items: flex-start;
+   gap: 10px;
+   border-radius: 6px;
+   border: 1px solid  #F1F1F3;
+   width: 20px;
+   height: 20px;
+}
+.listContainer a{
+
+    border-radius: 0px 0px 8px 8px;
+   background:  #FF9500;
+   padding: 20px 24px;
+   color: #F7F7F8;
+   text-align: center;
+   
+}
+
+.footer{
+    display: flex;
+   padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    background-color: white;
+   
+}
+
+.footer .row{
+    flex-wrap: wrap;
+}
+.footer-left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 95%;
+    padding:20px 20px;
+    gap: 50px;
+    
+}
+
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 400px;
+    flex-wrap: wrap;
+}
+.footer .ph{
+   
+    border-top: 1px solid  #F1F1F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+   
+
+}
+.footer-left img{
+    width: 60px;
+    height: 60px;
+     position: relative;
+     border-radius: 8px;
+}
+.footer-left-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-left-child1{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+.footer-right{
+    display: flex;
+    flex: 1 1 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.footer-right-child{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.footer-right-child nav{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ .footer-right-child1{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    
+ } 
+ .footer-right-child1 nav{
+   display: flex;
+    gap: 14px;
+
+ }
+ .footer-right-child1 a{
+    border: 1px solid  #F1F1F3;
+    border-radius: 8px;
+    padding: 5px;
+    
+    
+ } 
